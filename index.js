@@ -117,14 +117,14 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+                observer.unobserve(entry.target);
             }
         });
-    });
+    }, { rootMargin: "0px 0px -50px 0px" });
 
-    // Select the element to be observed
-    const fadeInElement = document.querySelector('.fade_in_left');
-    observer.observe(fadeInElement);
+    // Select all elements with the class .fade_in_left
+    const fadeInElements = document.querySelectorAll('.fade_in_left');
+    fadeInElements.forEach(element => observer.observe(element));
 });
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -132,31 +132,28 @@ document.addEventListener("DOMContentLoaded", function() {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+                observer.unobserve(entry.target);
             }
         });
-    });
+    }, { rootMargin: "0px 0px -50px 0px" });
 
-    // Select the element to be observed
-    const fadeInElement = document.querySelector('.fade_in_right');
-    observer.observe(fadeInElement);
+    // Select all elements with the class .fade_in_left
+    const fadeInElements = document.querySelectorAll('.fade_in_right');
+    fadeInElements.forEach(element => observer.observe(element));
 });
+
 
 document.addEventListener("DOMContentLoaded", function() {
     const observer = new IntersectionObserver(entries => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
                 entry.target.classList.add('visible');
-                observer.unobserve(entry.target); // Stop observing once the animation has been triggered
+                observer.unobserve(entry.target);
             }
         });
-    });
+    }, { rootMargin: "0px 0px -50px 0px" });
 
-    // Select all elements to be observed
+    // Select all elements with the class .fade_in_left
     const fadeInElements = document.querySelectorAll('.fade_in_up');
-    
-    // Observe each element individually
-    fadeInElements.forEach(element => {
-        observer.observe(element);
-    });
+    fadeInElements.forEach(element => observer.observe(element));
 });
