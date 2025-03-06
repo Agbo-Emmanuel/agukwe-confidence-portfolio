@@ -66,6 +66,7 @@ body{
     font-weight: 500;
     border: none;
     border-radius: 10px;
+    cursor: pointer;
 }
 .hero_body{
     width: 100%;
@@ -456,6 +457,11 @@ body{
     font-family: "Inter", serif;
     font-size: 16px;
     font-weight: 400;
+}
+
+.work_item_text_container a{
+    font-size: 16px;
+    color: #a6a6a6;
 }
 
 .menu_container{
