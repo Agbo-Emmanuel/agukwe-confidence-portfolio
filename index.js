@@ -69,9 +69,8 @@ const openMenu = document.getElementById('open');
 const closeMenu = document.getElementById('close');
 const menu = document.getElementById('menu');
 // const homeLink = document.getElementById('home_link');
-const aboutLink = document.getElementById('about_link');
-const serviceLink = document.getElementById('service_link');
-const bookMeLink = document.getElementById('book_me_link');
+// const closeLink = document.getElementById('close_link');
+const closeLinks = document.querySelectorAll('.close_link');
 
 
 
@@ -92,20 +91,12 @@ closeMenu.addEventListener('click', () => {
 //     openMenu.style.display = "flex";
 //     menu.classList.remove('visible');
 // });
-aboutLink.addEventListener('click', () => {
-    closeMenu.style.display = "none";
-    openMenu.style.display = "flex";
-    menu.classList.remove('visible');
-});
-serviceLink.addEventListener('click', () => {
-    closeMenu.style.display = "none";
-    openMenu.style.display = "flex";
-    menu.classList.remove('visible');
-});
-bookMeLink.addEventListener('click', () => {
-    closeMenu.style.display = "none";
-    openMenu.style.display = "flex";
-    menu.classList.remove('visible');
+closeLinks.forEach(closeLink => {
+    closeLink.addEventListener('click', () => {
+        closeMenu.style.display = "none";
+        openMenu.style.display = "flex";
+        menu.classList.remove('visible');
+    });
 });
 
 
