@@ -595,7 +595,7 @@ body{
 }
 
 
-/* @keyframes fadeInLeft {
+@keyframes fadeInLeft {
     0% {
         opacity: 0;
         transform: translateX(-100px);
@@ -604,9 +604,9 @@ body{
         opacity: 1;
         transform: translateX(0);
     }
-} */
+}
 
-/* @keyframes fadeInRight {
+@keyframes fadeInRight {
     0% {
         opacity: 0;
         transform: translateX(100px);
@@ -615,7 +615,7 @@ body{
         opacity: 1;
         transform: translateX(0);
     }
-} */
+}
 
 /* Initially hide the element */
 .fade_in_left {
@@ -633,7 +633,7 @@ body{
 .fade_in_right {
     opacity: 0;
     transform: translateX(100px);
-    transition: opacity 1s ease-out, transform 1s ease-out;
+    transition: fadeInRight 1s ease-out, transform 1s ease-out;
 }
 
 /* This class will trigger the animation */
