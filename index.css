@@ -54,6 +54,19 @@ body{
     cursor: pointer;
     text-decoration: none;
 }
+
+.header_nav_container > a > button{
+    width: max-content;
+    height: max-content;
+    background-color: #F9FAFB;
+    padding: 12px 26px;
+    color: #000;
+    font-size: 18px;
+    font-family: 'Inter', sans-serif;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+}
 .hero_body{
     width: 100%;
     height: max-content;
